@@ -44,7 +44,9 @@ const videos: Video[] = [
   { id: 5, name: 'Poznaj TypeScript', length: 22 },
 ];
 
-function processItems<T>(items: T[]): T[] {
+function processItems<T extends { id: number; name: string }>(
+  items: T[]
+): Pick<T, 'id' | 'name'>[] {
   return items.filter(({ id }) => id > 2).map(({ id, name }) => ({ id, name }));
 }
 
