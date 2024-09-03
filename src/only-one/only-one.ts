@@ -26,8 +26,19 @@ export const snake = new Snake();
 
 type AnimalInZoo = Monkey | Snake;
 
+// export function eatSomething(animal: AnimalInZoo) {
+//   animal.eatBanana();
+//   animal.eatMouse();
+// }
+// ... istniejący kod ...
+
 export function eatSomething(animal: AnimalInZoo) {
-  animal.eatBanana();
-  animal.eatMouse();
+  if (animal instanceof Monkey) {
+    return animal.eatBanana();
+  } else if (animal instanceof Snake) {
+    return animal.eatMouse();
+  }
 }
+
+// ... istniejący kod ...
 /* Do not modify tests */
