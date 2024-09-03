@@ -21,8 +21,12 @@ interface Teacher {
   teach(): string;
 }
 
-type SkilledPerson = Singer;
-export const johnDoe: SkilledPerson = {};
+type SkilledPerson = Singer & Dancer & Teacher;
+export const johnDoe: SkilledPerson = {
+  sing: () => 'I can sing!',
+  dance: () => 'I can dance!',
+  teach: () => 'I can teach!',
+};
 
 export function buildResume(person: SkilledPerson) {
   const skills = [person.dance(), person.sing(), person.teach()];
