@@ -1,5 +1,5 @@
 {
-  "name": "@przeprogramowani/typescript-challenges",
+  "name": "@ga1robe/typescript-challenges",
   "version": "1.0.0",
   "description": "A set of challenges helping you understand basics of TypeScript",
   "scripts": {
@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/psmyrdek/typescript-challenges.git"
+    "url": "git+https://github.com/ga1robe/typescript-challenges.git"
   },
-  "author": "przeprogramowani",
+  "author": "ga1robe(przeprogramowani)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/psmyrdek/typescript-challenges/issues"
+    "url": "https://github.com/ga1robe/typescript-challenges/issues"
   },
-  "homepage": "https://github.com/psmyrdek/typescript-challenges#readme",
+  "homepage": "https://github.com/ga1robe/typescript-challenges#readme",
   "devDependencies": {
     "@types/node": "20.14.14",
     "typescript": "5.5.4",
